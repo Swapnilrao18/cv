@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <hr size="3" noshade />
+    <h1>📞<u>My Contact Details</u>📞</h1>
+    <ul>
+      <li>
+        <u>Address</u>:- At/Post Wathar(kiroli),Tal-Koregoan,Dist-Satara 415116
+      </li>
+      <li><u>WhatsApp No</u>:- +91 7397975018</li>
+      <li>
+        <u>GitHub</u>:-
+        <a href="https://github.com/Swapnilrao18" target="_blank"
+          >Click Here!</a
+        >
+      </li>
+    </ul>
+    <hr size="3" noshade />
+    <h2>Feedback</h2>
+    <form
+      action="mailto:Swapnilrao18@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <!-- In Action we gave path to mail id and used method to send form details on particular mailId.And enctype used to send mail in plain text without any symbol-->
+      <label for=""
+        >Name:-<input type="text" name="FullName" placeholder="Enter your Full Name" /></label
+      ><br />
+      <label for="email">Email:-</label>
+      <input type="email" id="email" name="emailId" /><br />
+      <!-- id attribute is used to combine label element and input element.As in input we declare id=email and in label we declare for="email" that means whatever input given by user is assign to that label -->
+      <!-- name attribute is used to give proper name to input,when form submitted it is see in the post -->
+      <label>Gender:-</label>
+      <label for=""><input type="radio" name="Gender" />Male</label>
+
+      <label for=""><input type="radio" name="Gender" />Female</label>
+
+      <label for=""><input type="radio" name="Gender" />Transgender</label
+      ><br />
+      <label>Birth Date:-</label>
+      <label for=""><input type="date" /></label><br />
+      <label for="">
+        Have you Completed your Graduation?
+        <input type="checkbox" name="Graduation" id="" /> </label
+      ><br />
+      <fieldset>
+          <!-- fieldset is used to box the data we are declaring inside it. As legend used to give heading for that box.  -->
+        <legend>Choose Your Qualification</legend>
+        <input type="checkbox" id="10th" name="SSC" />
+        <label for="10th">10TH</label> <br />
+        <input type="checkbox" id="12th" name="HSC" />
+        <label for="12th">12TH</label><br />
+        <input type="checkbox" id="BTech" name="BE/BTECH" />
+        <label for="BTech">Be/BTech</label><br />
+        <input type="checkbox" id="MTech" name="ME/MTECH" />
+        <label for="Mtech">Me/MTech</label><br />
+      </fieldset>
+      <label for=""
+        >Feedback:- <br />
+        <textarea
+          name=""
+          placeholder="Type your Feedback Here..."
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea></label
+      ><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
